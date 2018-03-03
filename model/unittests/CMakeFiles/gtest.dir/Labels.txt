@@ -1,0 +1,13 @@
+# Target labels
+ gtest
+# Source files and their labels
+/home/me/Desktop/Sudoku/model/unittests/CMakeFiles/gtest
+/home/me/Desktop/Sudoku/model/unittests/CMakeFiles/gtest.rule
+/home/me/Desktop/Sudoku/model/unittests/CMakeFiles/gtest-complete.rule
+/home/me/Desktop/Sudoku/model/unittests/gtest/src/gtest-stamp/gtest-install.rule
+/home/me/Desktop/Sudoku/model/unittests/gtest/src/gtest-stamp/gtest-mkdir.rule
+/home/me/Desktop/Sudoku/model/unittests/gtest/src/gtest-stamp/gtest-download.rule
+/home/me/Desktop/Sudoku/model/unittests/gtest/src/gtest-stamp/gtest-update.rule
+/home/me/Desktop/Sudoku/model/unittests/gtest/src/gtest-stamp/gtest-patch.rule
+/home/me/Desktop/Sudoku/model/unittests/gtest/src/gtest-stamp/gtest-configure.rule
+/home/me/Desktop/Sudoku/model/unittests/gtest/src/gtest-stamp/gtest-build.rule

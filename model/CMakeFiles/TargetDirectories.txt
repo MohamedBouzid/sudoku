@@ -1,0 +1,9 @@
+/home/me/Desktop/Sudoku/model/CMakeFiles/edit_cache.dir
+/home/me/Desktop/Sudoku/model/CMakeFiles/rebuild_cache.dir
+/home/me/Desktop/Sudoku/model/CMakeFiles/test.dir
+/home/me/Desktop/Sudoku/model/CMakeFiles/matrixgen.dir
+/home/me/Desktop/Sudoku/model/unittests/CMakeFiles/test.dir
+/home/me/Desktop/Sudoku/model/unittests/CMakeFiles/gtest.dir
+/home/me/Desktop/Sudoku/model/unittests/CMakeFiles/matrixgentest.dir
+/home/me/Desktop/Sudoku/model/unittests/CMakeFiles/rebuild_cache.dir
+/home/me/Desktop/Sudoku/model/unittests/CMakeFiles/edit_cache.dir

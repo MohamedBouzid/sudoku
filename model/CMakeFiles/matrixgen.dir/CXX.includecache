@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/me/Desktop/Sudoku/model/MatrixGenerator.cpp
+MatrixGenerator.hpp
+/home/me/Desktop/Sudoku/model/MatrixGenerator.hpp
+ctime
+-
+cstdlib
+-
+
+/home/me/Desktop/Sudoku/model/MatrixGenerator.hpp
+vector
+-
+cstdint
+-
+

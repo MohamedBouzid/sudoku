@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/matrixgentest.dir/MatrixGeneratorTest.cpp.o  -o matrixgentest ../libmatrixgen.a gtest/src/gtest-build/googlemock/gtest/libgtest.a gtest/src/gtest-build/googlemock/libgmock.a -lpthread 

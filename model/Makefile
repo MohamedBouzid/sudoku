@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/me/Desktop/Sudoku
+CMAKE_SOURCE_DIR = /home/me/Desktop/Sudoku/model
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/me/Desktop/Sudoku
+CMAKE_BINARY_DIR = /home/me/Desktop/Sudoku/model
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,11 +78,22 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/me/Desktop/Sudoku/CMakeFiles /home/me/Desktop/Sudoku/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/me/Desktop/Sudoku/model/CMakeFiles /home/me/Desktop/Sudoku/model/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/me/Desktop/Sudoku/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/me/Desktop/Sudoku/model/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,44 +122,70 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Sudoku
+# Target rules for targets named matrixgen
 
 # Build rule for target.
-Sudoku: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Sudoku
-.PHONY : Sudoku
+matrixgen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 matrixgen
+.PHONY : matrixgen
 
 # fast build rule for target.
-Sudoku/fast:
-	$(MAKE) -f CMakeFiles/Sudoku.dir/build.make CMakeFiles/Sudoku.dir/build
-.PHONY : Sudoku/fast
+matrixgen/fast:
+	$(MAKE) -f CMakeFiles/matrixgen.dir/build.make CMakeFiles/matrixgen.dir/build
+.PHONY : matrixgen/fast
 
-Sudoku.o: Sudoku.cpp.o
+#=============================================================================
+# Target rules for targets named gtest
 
-.PHONY : Sudoku.o
+# Build rule for target.
+gtest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gtest
+.PHONY : gtest
+
+# fast build rule for target.
+gtest/fast:
+	$(MAKE) -f unittests/CMakeFiles/gtest.dir/build.make unittests/CMakeFiles/gtest.dir/build
+.PHONY : gtest/fast
+
+#=============================================================================
+# Target rules for targets named matrixgentest
+
+# Build rule for target.
+matrixgentest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 matrixgentest
+.PHONY : matrixgentest
+
+# fast build rule for target.
+matrixgentest/fast:
+	$(MAKE) -f unittests/CMakeFiles/matrixgentest.dir/build.make unittests/CMakeFiles/matrixgentest.dir/build
+.PHONY : matrixgentest/fast
+
+MatrixGenerator.o: MatrixGenerator.cpp.o
+
+.PHONY : MatrixGenerator.o
 
 # target to build an object file
-Sudoku.cpp.o:
-	$(MAKE) -f CMakeFiles/Sudoku.dir/build.make CMakeFiles/Sudoku.dir/Sudoku.cpp.o
-.PHONY : Sudoku.cpp.o
+MatrixGenerator.cpp.o:
+	$(MAKE) -f CMakeFiles/matrixgen.dir/build.make CMakeFiles/matrixgen.dir/MatrixGenerator.cpp.o
+.PHONY : MatrixGenerator.cpp.o
 
-Sudoku.i: Sudoku.cpp.i
+MatrixGenerator.i: MatrixGenerator.cpp.i
 
-.PHONY : Sudoku.i
+.PHONY : MatrixGenerator.i
 
 # target to preprocess a source file
-Sudoku.cpp.i:
-	$(MAKE) -f CMakeFiles/Sudoku.dir/build.make CMakeFiles/Sudoku.dir/Sudoku.cpp.i
-.PHONY : Sudoku.cpp.i
+MatrixGenerator.cpp.i:
+	$(MAKE) -f CMakeFiles/matrixgen.dir/build.make CMakeFiles/matrixgen.dir/MatrixGenerator.cpp.i
+.PHONY : MatrixGenerator.cpp.i
 
-Sudoku.s: Sudoku.cpp.s
+MatrixGenerator.s: MatrixGenerator.cpp.s
 
-.PHONY : Sudoku.s
+.PHONY : MatrixGenerator.s
 
 # target to generate assembly for a file
-Sudoku.cpp.s:
-	$(MAKE) -f CMakeFiles/Sudoku.dir/build.make CMakeFiles/Sudoku.dir/Sudoku.cpp.s
-.PHONY : Sudoku.cpp.s
+MatrixGenerator.cpp.s:
+	$(MAKE) -f CMakeFiles/matrixgen.dir/build.make CMakeFiles/matrixgen.dir/MatrixGenerator.cpp.s
+.PHONY : MatrixGenerator.cpp.s
 
 # Help Target
 help:
@@ -158,10 +195,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... Sudoku"
-	@echo "... Sudoku.o"
-	@echo "... Sudoku.i"
-	@echo "... Sudoku.s"
+	@echo "... test"
+	@echo "... matrixgen"
+	@echo "... gtest"
+	@echo "... matrixgentest"
+	@echo "... MatrixGenerator.o"
+	@echo "... MatrixGenerator.i"
+	@echo "... MatrixGenerator.s"
 .PHONY : help
 
 

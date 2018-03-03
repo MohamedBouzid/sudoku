@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmatrixgen.a  CMakeFiles/matrixgen.dir/MatrixGenerator.cpp.o
+/usr/bin/ranlib libmatrixgen.a
