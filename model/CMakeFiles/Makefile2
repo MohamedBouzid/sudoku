@@ -66,7 +66,7 @@ CMAKE_BINARY_DIR = /home/me/Desktop/Sudoku/model
 CMakeFiles/matrixgen.dir/all:
 	$(MAKE) -f CMakeFiles/matrixgen.dir/build.make CMakeFiles/matrixgen.dir/depend
 	$(MAKE) -f CMakeFiles/matrixgen.dir/build.make CMakeFiles/matrixgen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/me/Desktop/Sudoku/model/CMakeFiles --progress-num=9,10 "Built target matrixgen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/me/Desktop/Sudoku/model/CMakeFiles --progress-num=9,10,11,12 "Built target matrixgen"
 .PHONY : CMakeFiles/matrixgen.dir/all
 
 # Include target in all.
@@ -76,7 +76,7 @@ all: CMakeFiles/matrixgen.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/matrixgen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/me/Desktop/Sudoku/model/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/me/Desktop/Sudoku/model/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/matrixgen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/me/Desktop/Sudoku/model/CMakeFiles 0
 .PHONY : CMakeFiles/matrixgen.dir/rule
@@ -161,7 +161,7 @@ unittests/CMakeFiles/matrixgentest.dir/all: CMakeFiles/matrixgen.dir/all
 unittests/CMakeFiles/matrixgentest.dir/all: unittests/CMakeFiles/gtest.dir/all
 	$(MAKE) -f unittests/CMakeFiles/matrixgentest.dir/build.make unittests/CMakeFiles/matrixgentest.dir/depend
 	$(MAKE) -f unittests/CMakeFiles/matrixgentest.dir/build.make unittests/CMakeFiles/matrixgentest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/me/Desktop/Sudoku/model/CMakeFiles --progress-num=11,12 "Built target matrixgentest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/me/Desktop/Sudoku/model/CMakeFiles --progress-num=13,14 "Built target matrixgentest"
 .PHONY : unittests/CMakeFiles/matrixgentest.dir/all
 
 # Include target in all.
@@ -171,7 +171,7 @@ all: unittests/CMakeFiles/matrixgentest.dir/all
 
 # Build rule for subdir invocation for target.
 unittests/CMakeFiles/matrixgentest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/me/Desktop/Sudoku/model/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/me/Desktop/Sudoku/model/CMakeFiles 14
 	$(MAKE) -f CMakeFiles/Makefile2 unittests/CMakeFiles/matrixgentest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/me/Desktop/Sudoku/model/CMakeFiles 0
 .PHONY : unittests/CMakeFiles/matrixgentest.dir/rule

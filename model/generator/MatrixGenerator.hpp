@@ -1,6 +1,7 @@
 #pragma once
 
-#include<Random.hpp>
+#include"Random.hpp"
+#include"../Matrix.hpp"
 #include<vector>
 #include <cstdint>
 
@@ -9,12 +10,9 @@
 
 namespace matgen {
 
-class MatrixGenerator {
+class MatrixGenerator: public mat::Matrix {
 
 public:
-	const int columns = 9;
-	const int rows = 9;
-	std::vector<std::vector<int> > SudokuMatrix;
 	MatrixGenerator();
 	MatrixGenerator(std::vector<std::vector<int> >&&);
 	MatrixGenerator(MatrixGenerator&&);

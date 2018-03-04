@@ -160,32 +160,86 @@ matrixgentest/fast:
 	$(MAKE) -f unittests/CMakeFiles/matrixgentest.dir/build.make unittests/CMakeFiles/matrixgentest.dir/build
 .PHONY : matrixgentest/fast
 
-MatrixGenerator.o: MatrixGenerator.cpp.o
+Matrix.o: Matrix.cpp.o
 
-.PHONY : MatrixGenerator.o
+.PHONY : Matrix.o
 
 # target to build an object file
-MatrixGenerator.cpp.o:
-	$(MAKE) -f CMakeFiles/matrixgen.dir/build.make CMakeFiles/matrixgen.dir/MatrixGenerator.cpp.o
-.PHONY : MatrixGenerator.cpp.o
+Matrix.cpp.o:
+	$(MAKE) -f CMakeFiles/matrixgen.dir/build.make CMakeFiles/matrixgen.dir/Matrix.cpp.o
+.PHONY : Matrix.cpp.o
 
-MatrixGenerator.i: MatrixGenerator.cpp.i
+Matrix.i: Matrix.cpp.i
 
-.PHONY : MatrixGenerator.i
+.PHONY : Matrix.i
 
 # target to preprocess a source file
-MatrixGenerator.cpp.i:
-	$(MAKE) -f CMakeFiles/matrixgen.dir/build.make CMakeFiles/matrixgen.dir/MatrixGenerator.cpp.i
-.PHONY : MatrixGenerator.cpp.i
+Matrix.cpp.i:
+	$(MAKE) -f CMakeFiles/matrixgen.dir/build.make CMakeFiles/matrixgen.dir/Matrix.cpp.i
+.PHONY : Matrix.cpp.i
 
-MatrixGenerator.s: MatrixGenerator.cpp.s
+Matrix.s: Matrix.cpp.s
 
-.PHONY : MatrixGenerator.s
+.PHONY : Matrix.s
 
 # target to generate assembly for a file
-MatrixGenerator.cpp.s:
-	$(MAKE) -f CMakeFiles/matrixgen.dir/build.make CMakeFiles/matrixgen.dir/MatrixGenerator.cpp.s
-.PHONY : MatrixGenerator.cpp.s
+Matrix.cpp.s:
+	$(MAKE) -f CMakeFiles/matrixgen.dir/build.make CMakeFiles/matrixgen.dir/Matrix.cpp.s
+.PHONY : Matrix.cpp.s
+
+generator/MatrixGenerator.o: generator/MatrixGenerator.cpp.o
+
+.PHONY : generator/MatrixGenerator.o
+
+# target to build an object file
+generator/MatrixGenerator.cpp.o:
+	$(MAKE) -f CMakeFiles/matrixgen.dir/build.make CMakeFiles/matrixgen.dir/generator/MatrixGenerator.cpp.o
+.PHONY : generator/MatrixGenerator.cpp.o
+
+generator/MatrixGenerator.i: generator/MatrixGenerator.cpp.i
+
+.PHONY : generator/MatrixGenerator.i
+
+# target to preprocess a source file
+generator/MatrixGenerator.cpp.i:
+	$(MAKE) -f CMakeFiles/matrixgen.dir/build.make CMakeFiles/matrixgen.dir/generator/MatrixGenerator.cpp.i
+.PHONY : generator/MatrixGenerator.cpp.i
+
+generator/MatrixGenerator.s: generator/MatrixGenerator.cpp.s
+
+.PHONY : generator/MatrixGenerator.s
+
+# target to generate assembly for a file
+generator/MatrixGenerator.cpp.s:
+	$(MAKE) -f CMakeFiles/matrixgen.dir/build.make CMakeFiles/matrixgen.dir/generator/MatrixGenerator.cpp.s
+.PHONY : generator/MatrixGenerator.cpp.s
+
+generator/Random.o: generator/Random.cpp.o
+
+.PHONY : generator/Random.o
+
+# target to build an object file
+generator/Random.cpp.o:
+	$(MAKE) -f CMakeFiles/matrixgen.dir/build.make CMakeFiles/matrixgen.dir/generator/Random.cpp.o
+.PHONY : generator/Random.cpp.o
+
+generator/Random.i: generator/Random.cpp.i
+
+.PHONY : generator/Random.i
+
+# target to preprocess a source file
+generator/Random.cpp.i:
+	$(MAKE) -f CMakeFiles/matrixgen.dir/build.make CMakeFiles/matrixgen.dir/generator/Random.cpp.i
+.PHONY : generator/Random.cpp.i
+
+generator/Random.s: generator/Random.cpp.s
+
+.PHONY : generator/Random.s
+
+# target to generate assembly for a file
+generator/Random.cpp.s:
+	$(MAKE) -f CMakeFiles/matrixgen.dir/build.make CMakeFiles/matrixgen.dir/generator/Random.cpp.s
+.PHONY : generator/Random.cpp.s
 
 # Help Target
 help:
@@ -199,9 +253,15 @@ help:
 	@echo "... matrixgen"
 	@echo "... gtest"
 	@echo "... matrixgentest"
-	@echo "... MatrixGenerator.o"
-	@echo "... MatrixGenerator.i"
-	@echo "... MatrixGenerator.s"
+	@echo "... Matrix.o"
+	@echo "... Matrix.i"
+	@echo "... Matrix.s"
+	@echo "... generator/MatrixGenerator.o"
+	@echo "... generator/MatrixGenerator.i"
+	@echo "... generator/MatrixGenerator.s"
+	@echo "... generator/Random.o"
+	@echo "... generator/Random.i"
+	@echo "... generator/Random.s"
 .PHONY : help
 
 

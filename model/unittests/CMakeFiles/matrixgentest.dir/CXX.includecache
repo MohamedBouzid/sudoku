@@ -6,10 +6,24 @@
 
 #IncludeRegexTransform: 
 
-/home/me/Desktop/Sudoku/model/MatrixGenerator.hpp
+/home/me/Desktop/Sudoku/model/Matrix.hpp
+vector
+-
+
+/home/me/Desktop/Sudoku/model/generator/MatrixGenerator.hpp
+Random.hpp
+/home/me/Desktop/Sudoku/model/generator/Random.hpp
+../Matrix.hpp
+/home/me/Desktop/Sudoku/model/Matrix.hpp
 vector
 -
 cstdint
+-
+
+/home/me/Desktop/Sudoku/model/generator/Random.hpp
+cstdlib
+-
+ctime
 -
 
 /home/me/Desktop/Sudoku/model/unittests/MatrixGeneratorTest.cpp
@@ -17,8 +31,8 @@ cstdint
 -
 gtest/gtest.h
 /home/me/Desktop/Sudoku/model/unittests/gtest/gtest.h
-../MatrixGenerator.hpp
-/home/me/Desktop/Sudoku/model/MatrixGenerator.hpp
+../generator/MatrixGenerator.hpp
+/home/me/Desktop/Sudoku/model/generator/MatrixGenerator.hpp
 
 unittests/gtest/src/gtest/googletest/include/gtest/gtest-death-test.h
 gtest/internal/gtest-death-test-internal.h

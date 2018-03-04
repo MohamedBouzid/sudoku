@@ -1,6 +1,6 @@
 #include <cstdint>
 #include"gtest/gtest.h"
-#include"../MatrixGenerator.hpp"
+#include"../generator/MatrixGenerator.hpp"
 
 class MatrixGenGT:public::testing::Test {
 public:

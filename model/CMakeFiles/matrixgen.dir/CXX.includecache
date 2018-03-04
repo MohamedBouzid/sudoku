@@ -6,17 +6,39 @@
 
 #IncludeRegexTransform: 
 
-/home/me/Desktop/Sudoku/model/MatrixGenerator.cpp
+/home/me/Desktop/Sudoku/model/Matrix.cpp
+Matrix.hpp
+/home/me/Desktop/Sudoku/model/Matrix.hpp
+
+/home/me/Desktop/Sudoku/model/Matrix.hpp
+vector
+-
+
+/home/me/Desktop/Sudoku/model/generator/MatrixGenerator.cpp
 MatrixGenerator.hpp
-/home/me/Desktop/Sudoku/model/MatrixGenerator.hpp
+/home/me/Desktop/Sudoku/model/generator/MatrixGenerator.hpp
 ctime
 -
 cstdlib
 -
 
-/home/me/Desktop/Sudoku/model/MatrixGenerator.hpp
+/home/me/Desktop/Sudoku/model/generator/MatrixGenerator.hpp
+Random.hpp
+/home/me/Desktop/Sudoku/model/generator/Random.hpp
+../Matrix.hpp
+/home/me/Desktop/Sudoku/model/Matrix.hpp
 vector
 -
 cstdint
+-
+
+/home/me/Desktop/Sudoku/model/generator/Random.cpp
+Random.hpp
+/home/me/Desktop/Sudoku/model/generator/Random.hpp
+
+/home/me/Desktop/Sudoku/model/generator/Random.hpp
+cstdlib
+-
+ctime
 -
 

@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/matrixgen.dir/MatrixGenerator.cpp.o"
+  "CMakeFiles/matrixgen.dir/generator/MatrixGenerator.cpp.o"
+  "CMakeFiles/matrixgen.dir/generator/Random.cpp.o"
+  "CMakeFiles/matrixgen.dir/Matrix.cpp.o"
   "libmatrixgen.pdb"
   "libmatrixgen.a"
 )

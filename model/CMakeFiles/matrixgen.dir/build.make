@@ -57,41 +57,93 @@ include CMakeFiles/matrixgen.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/matrixgen.dir/flags.make
 
-CMakeFiles/matrixgen.dir/MatrixGenerator.cpp.o: CMakeFiles/matrixgen.dir/flags.make
-CMakeFiles/matrixgen.dir/MatrixGenerator.cpp.o: MatrixGenerator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/me/Desktop/Sudoku/model/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/matrixgen.dir/MatrixGenerator.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/matrixgen.dir/MatrixGenerator.cpp.o -c /home/me/Desktop/Sudoku/model/MatrixGenerator.cpp
+CMakeFiles/matrixgen.dir/generator/MatrixGenerator.cpp.o: CMakeFiles/matrixgen.dir/flags.make
+CMakeFiles/matrixgen.dir/generator/MatrixGenerator.cpp.o: generator/MatrixGenerator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/me/Desktop/Sudoku/model/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/matrixgen.dir/generator/MatrixGenerator.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/matrixgen.dir/generator/MatrixGenerator.cpp.o -c /home/me/Desktop/Sudoku/model/generator/MatrixGenerator.cpp
 
-CMakeFiles/matrixgen.dir/MatrixGenerator.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/matrixgen.dir/MatrixGenerator.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/me/Desktop/Sudoku/model/MatrixGenerator.cpp > CMakeFiles/matrixgen.dir/MatrixGenerator.cpp.i
+CMakeFiles/matrixgen.dir/generator/MatrixGenerator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/matrixgen.dir/generator/MatrixGenerator.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/me/Desktop/Sudoku/model/generator/MatrixGenerator.cpp > CMakeFiles/matrixgen.dir/generator/MatrixGenerator.cpp.i
 
-CMakeFiles/matrixgen.dir/MatrixGenerator.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/matrixgen.dir/MatrixGenerator.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/me/Desktop/Sudoku/model/MatrixGenerator.cpp -o CMakeFiles/matrixgen.dir/MatrixGenerator.cpp.s
+CMakeFiles/matrixgen.dir/generator/MatrixGenerator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/matrixgen.dir/generator/MatrixGenerator.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/me/Desktop/Sudoku/model/generator/MatrixGenerator.cpp -o CMakeFiles/matrixgen.dir/generator/MatrixGenerator.cpp.s
 
-CMakeFiles/matrixgen.dir/MatrixGenerator.cpp.o.requires:
+CMakeFiles/matrixgen.dir/generator/MatrixGenerator.cpp.o.requires:
 
-.PHONY : CMakeFiles/matrixgen.dir/MatrixGenerator.cpp.o.requires
+.PHONY : CMakeFiles/matrixgen.dir/generator/MatrixGenerator.cpp.o.requires
 
-CMakeFiles/matrixgen.dir/MatrixGenerator.cpp.o.provides: CMakeFiles/matrixgen.dir/MatrixGenerator.cpp.o.requires
-	$(MAKE) -f CMakeFiles/matrixgen.dir/build.make CMakeFiles/matrixgen.dir/MatrixGenerator.cpp.o.provides.build
-.PHONY : CMakeFiles/matrixgen.dir/MatrixGenerator.cpp.o.provides
+CMakeFiles/matrixgen.dir/generator/MatrixGenerator.cpp.o.provides: CMakeFiles/matrixgen.dir/generator/MatrixGenerator.cpp.o.requires
+	$(MAKE) -f CMakeFiles/matrixgen.dir/build.make CMakeFiles/matrixgen.dir/generator/MatrixGenerator.cpp.o.provides.build
+.PHONY : CMakeFiles/matrixgen.dir/generator/MatrixGenerator.cpp.o.provides
 
-CMakeFiles/matrixgen.dir/MatrixGenerator.cpp.o.provides.build: CMakeFiles/matrixgen.dir/MatrixGenerator.cpp.o
+CMakeFiles/matrixgen.dir/generator/MatrixGenerator.cpp.o.provides.build: CMakeFiles/matrixgen.dir/generator/MatrixGenerator.cpp.o
+
+
+CMakeFiles/matrixgen.dir/generator/Random.cpp.o: CMakeFiles/matrixgen.dir/flags.make
+CMakeFiles/matrixgen.dir/generator/Random.cpp.o: generator/Random.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/me/Desktop/Sudoku/model/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/matrixgen.dir/generator/Random.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/matrixgen.dir/generator/Random.cpp.o -c /home/me/Desktop/Sudoku/model/generator/Random.cpp
+
+CMakeFiles/matrixgen.dir/generator/Random.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/matrixgen.dir/generator/Random.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/me/Desktop/Sudoku/model/generator/Random.cpp > CMakeFiles/matrixgen.dir/generator/Random.cpp.i
+
+CMakeFiles/matrixgen.dir/generator/Random.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/matrixgen.dir/generator/Random.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/me/Desktop/Sudoku/model/generator/Random.cpp -o CMakeFiles/matrixgen.dir/generator/Random.cpp.s
+
+CMakeFiles/matrixgen.dir/generator/Random.cpp.o.requires:
+
+.PHONY : CMakeFiles/matrixgen.dir/generator/Random.cpp.o.requires
+
+CMakeFiles/matrixgen.dir/generator/Random.cpp.o.provides: CMakeFiles/matrixgen.dir/generator/Random.cpp.o.requires
+	$(MAKE) -f CMakeFiles/matrixgen.dir/build.make CMakeFiles/matrixgen.dir/generator/Random.cpp.o.provides.build
+.PHONY : CMakeFiles/matrixgen.dir/generator/Random.cpp.o.provides
+
+CMakeFiles/matrixgen.dir/generator/Random.cpp.o.provides.build: CMakeFiles/matrixgen.dir/generator/Random.cpp.o
+
+
+CMakeFiles/matrixgen.dir/Matrix.cpp.o: CMakeFiles/matrixgen.dir/flags.make
+CMakeFiles/matrixgen.dir/Matrix.cpp.o: Matrix.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/me/Desktop/Sudoku/model/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/matrixgen.dir/Matrix.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/matrixgen.dir/Matrix.cpp.o -c /home/me/Desktop/Sudoku/model/Matrix.cpp
+
+CMakeFiles/matrixgen.dir/Matrix.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/matrixgen.dir/Matrix.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/me/Desktop/Sudoku/model/Matrix.cpp > CMakeFiles/matrixgen.dir/Matrix.cpp.i
+
+CMakeFiles/matrixgen.dir/Matrix.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/matrixgen.dir/Matrix.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/me/Desktop/Sudoku/model/Matrix.cpp -o CMakeFiles/matrixgen.dir/Matrix.cpp.s
+
+CMakeFiles/matrixgen.dir/Matrix.cpp.o.requires:
+
+.PHONY : CMakeFiles/matrixgen.dir/Matrix.cpp.o.requires
+
+CMakeFiles/matrixgen.dir/Matrix.cpp.o.provides: CMakeFiles/matrixgen.dir/Matrix.cpp.o.requires
+	$(MAKE) -f CMakeFiles/matrixgen.dir/build.make CMakeFiles/matrixgen.dir/Matrix.cpp.o.provides.build
+.PHONY : CMakeFiles/matrixgen.dir/Matrix.cpp.o.provides
+
+CMakeFiles/matrixgen.dir/Matrix.cpp.o.provides.build: CMakeFiles/matrixgen.dir/Matrix.cpp.o
 
 
 # Object files for target matrixgen
 matrixgen_OBJECTS = \
-"CMakeFiles/matrixgen.dir/MatrixGenerator.cpp.o"
+"CMakeFiles/matrixgen.dir/generator/MatrixGenerator.cpp.o" \
+"CMakeFiles/matrixgen.dir/generator/Random.cpp.o" \
+"CMakeFiles/matrixgen.dir/Matrix.cpp.o"
 
 # External object files for target matrixgen
 matrixgen_EXTERNAL_OBJECTS =
 
-libmatrixgen.a: CMakeFiles/matrixgen.dir/MatrixGenerator.cpp.o
+libmatrixgen.a: CMakeFiles/matrixgen.dir/generator/MatrixGenerator.cpp.o
+libmatrixgen.a: CMakeFiles/matrixgen.dir/generator/Random.cpp.o
+libmatrixgen.a: CMakeFiles/matrixgen.dir/Matrix.cpp.o
 libmatrixgen.a: CMakeFiles/matrixgen.dir/build.make
 libmatrixgen.a: CMakeFiles/matrixgen.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/me/Desktop/Sudoku/model/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libmatrixgen.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/me/Desktop/Sudoku/model/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libmatrixgen.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/matrixgen.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/matrixgen.dir/link.txt --verbose=$(VERBOSE)
 
@@ -100,7 +152,9 @@ CMakeFiles/matrixgen.dir/build: libmatrixgen.a
 
 .PHONY : CMakeFiles/matrixgen.dir/build
 
-CMakeFiles/matrixgen.dir/requires: CMakeFiles/matrixgen.dir/MatrixGenerator.cpp.o.requires
+CMakeFiles/matrixgen.dir/requires: CMakeFiles/matrixgen.dir/generator/MatrixGenerator.cpp.o.requires
+CMakeFiles/matrixgen.dir/requires: CMakeFiles/matrixgen.dir/generator/Random.cpp.o.requires
+CMakeFiles/matrixgen.dir/requires: CMakeFiles/matrixgen.dir/Matrix.cpp.o.requires
 
 .PHONY : CMakeFiles/matrixgen.dir/requires
 

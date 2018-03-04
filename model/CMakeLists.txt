@@ -3,8 +3,12 @@ cmake_minimum_required(VERSION 3.5)
 set (CMAKE_CXX_STANDARD 11)
 #Add all files to the variable
 set(matrixgen_SRC
-		MatrixGenerator.cpp
-		MatrixGenerator.hpp
+		generator/MatrixGenerator.cpp
+		generator/MatrixGenerator.hpp
+		generator/Random.hpp
+		generator/Random.cpp
+		Matrix.cpp
+		Matrix.hpp
 )
 enable_testing()
 

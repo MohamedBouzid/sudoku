@@ -9,16 +9,16 @@ matgen::MatrixGenerator::MatrixGenerator() {
 				column++) {
 			double randomValue = rd::Random::RandomProbability();
 			SudokuMatrix[row][column] = 0;
-			if (isAboveHalf(randomValue))
+			if (rd::Random::isAboveHalf(randomValue))
 				SudokuMatrix[row][column] =
 						rd::Random::GenerateRandomValue();
 		}
 	}
 }
 
-matgen::MatrixGenerator::MatrixGenerator(std::vector<std::vector<int> > && matrix) : SudokuMatrix((matrix)){}
+//matgen::MatrixGenerator::MatrixGenerator(std::vector<std::vector<int> > && matrix) : SudokuMatrix((matrix)){}
 
-matgen::MatrixGenerator::MatrixGenerator(MatrixGenerator&& matrixGen) : SudokuMatrix((matrixGen.SudokuMatrix)){}
+//matgen::MatrixGenerator::MatrixGenerator(MatrixGenerator&& matrixGen) : SudokuMatrix((matrixGen.SudokuMatrix)){}
 
 bool matgen::MatrixGenerator::isValidMatrix() {
 	bool isValid = true;

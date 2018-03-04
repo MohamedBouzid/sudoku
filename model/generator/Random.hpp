@@ -17,6 +17,6 @@ public:
 
 	static double RandomProbability();
 
-	bool isAboveHalf(double);
+	static bool isAboveHalf(double);
 };
 }
