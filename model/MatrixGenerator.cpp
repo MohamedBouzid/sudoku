@@ -7,36 +7,25 @@ matgen::MatrixGenerator::MatrixGenerator() {
 	for (int row = 0; row < matgen::MatrixGenerator::rows; row++) {
 		for (int column = 0; column < matgen::MatrixGenerator::columns;
 				column++) {
-			double randomValue = RandomProbability();
+			double randomValue = rd::Random::RandomProbability();
+			SudokuMatrix[row][column] = 0;
 			if (isAboveHalf(randomValue))
 				SudokuMatrix[row][column] =
-						matgen::MatrixGenerator::GenerateRandomValue();
-			else
-				SudokuMatrix[row][column] = 0;
+						rd::Random::GenerateRandomValue();
 		}
 	}
 }
 
-int matgen::MatrixGenerator::GenerateRandomValue() {
-	return rand() % 9 + 1;
-}
+matgen::MatrixGenerator::MatrixGenerator(std::vector<std::vector<int> > && matrix) : SudokuMatrix((matrix)){}
 
-double matgen::MatrixGenerator::RandomProbability() {
-	int randomValue = rand();
-	static_cast<double>(randomValue);
-	randomValue = randomValue / static_cast<double>(RAND_MAX);
-	return randomValue;
-}
+matgen::MatrixGenerator::MatrixGenerator(MatrixGenerator&& matrixGen) : SudokuMatrix((matrixGen.SudokuMatrix)){}
 
-bool matgen::MatrixGenerator::isAboveHalf(double value) {
-	return value < 0.5;
-}
-
-bool matgen::MatrixGenerator::isValidMatrix(){
+bool matgen::MatrixGenerator::isValidMatrix() {
 	bool isValid = true;
-	for(int row=0; row<9; row++){
-		for(int column; column<9; column++){
-			if(!isValidValue(row, column)) return false;
+	for (int row = 0; row < 9; row++) {
+		for (int column; column < 9; column++) {
+			if (!isValidValue(row, column))
+				return false;
 		}
 	}
 	return true;

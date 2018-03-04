@@ -1,3 +1,6 @@
+#pragma once
+
+#include<Random.hpp>
 #include<vector>
 #include <cstdint>
 
@@ -13,9 +16,8 @@ public:
 	const int rows = 9;
 	std::vector<std::vector<int> > SudokuMatrix;
 	MatrixGenerator();
-	static int GenerateRandomValue();
-	static double RandomProbability();
-	bool isAboveHalf(double);
+	MatrixGenerator(std::vector<std::vector<int> >&&);
+	MatrixGenerator(MatrixGenerator&&);
 	bool isValidMatrix();
 	inline bool isValidValue(int, int);
 	inline bool hasOccured(int, int, int, int, int);
